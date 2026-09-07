@@ -26,8 +26,7 @@ jobs:
           gradle-version: '8.11.1'
 
       - name: Extract Android project
-        run: unzip -o PixelSoftQRScanner_Project_v1.2.1.zip -d extracted
-
+        run: unzip -o PixelSoftQRScanner_Project_v1.3_UI_Fixed.zip -d extracted
       - name: Build debug APK
         working-directory: extracted/PixelSoftQRScanner
         run: gradle assembleDebug --no-daemon
